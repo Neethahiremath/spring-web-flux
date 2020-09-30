@@ -1,0 +1,22 @@
+Get a Single Item:
+--------------------
+http://localhost:8081/client/retrieve/singleItem
+http://localhost:8081/client/exchange/singleItem
+
+
+Get All Items:
+---------------
+http://localhost:8081/client/exchange
+http://localhost:8081/client/retrieve
+
+
+
+POST:
+curl -d '{"id": null,"description": "Apple Watch","price": 349.99}' -H "Content-Type: application/json" -X POST http://localhost:8081/client/createItem
+
+
+PUT:
+curl -d '{"id": null,"description": "Apple Watch","price": 349.99}' -H "Content-Type: application/json" -X PUT http://localhost:8081/client/updateItem/ABC
+
+DELETE:
+curl -X DELETE http://localhost:8081/client/deleteItem/ABC
